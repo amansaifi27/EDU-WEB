@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EduWeb | IT & Competitive Courses</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>EduWeb</h1>
+    <p>Your Gateway to IT & Competitive Exam Success</p>
+  </header>
+
+  <main>
+    <section class="courses">
+      <h2>Explore Our Courses</h2>
+      <div class="course-list">
+
+        <!-- IT & Programming Courses -->
+        <div class="course-card">
+          <h3>Web Development</h3>
+          <p>HTML, CSS, JavaScript, React</p>
+          <button onclick="enroll('Web Development')">Enroll</button>
+        </div>
+
+        <div class="course-card">
+          <h3>Python Programming</h3>
+          <p>Automation, Data Science, AI Basics</p>
+          <button onclick="enroll('Python Programming')">Enroll</button>
+        </div>
+
+        <div class="course-card">
+          <h3>Full Stack Java</h3>
+          <p>Core Java, Spring Boot, JSP, SQL</p>
+          <button onclick="enroll('Full Stack Java')">Enroll</button>
+        </div>
+
+        <div class="course-card">
+          <h3>DSA & Problem Solving</h3>
+          <p>Master Algorithms & Data Structures</p>
+          <button onclick="enroll('DSA & Problem Solving')">Enroll</button>
+        </div>
+
+        <!-- Competitive Exam Courses -->
+        <div class="course-card">
+          <h3>GATE (CS/IT)</h3>
+          <p>Complete GATE syllabus with test series</p>
+          <button onclick="enroll('GATE')">Enroll</button>
+        </div>
+
+        <div class="course-card">
+          <h3>UPSC</h3>
+          <p>GS + CSAT + Optional subjects preparation</p>
+          <button onclick="enroll('UPSC')">Enroll</button>
+        </div>
+
+        <div class="course-card">
+          <h3>IIT JEE</h3>
+          <p>Physics, Chemistry, Mathematics coaching</p>
+          <button onclick="enroll('IIT JEE')">Enroll</button>
+        </div>
+
+        <div class="course-card">
+          <h3>Other Courses</h3>
+          <p>Banking, SSC, NEET, CAT, and more...</p>
+          <button onclick="enroll('Other Courses')">Enroll</button>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="enroll-form" id="enrollSection">
+      <h2>Enroll Now</h2>
+      <form onsubmit="submitForm(event)">
+        <input type="text" id="studentName" placeholder="Full Name" required />
+        <input type="email" id="studentEmail" placeholder="Email Address" required />
+        <input type="text" id="selectedCourse" placeholder="Course Name" readonly required />
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 EduWeb. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
